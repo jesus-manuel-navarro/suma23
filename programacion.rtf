@@ -1,0 +1,268 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red108\green121\blue135;\red24\green24\blue28;\red255\green255\blue255;
+\red242\green36\blue140;\red53\green176\blue216;\red252\green70\blue81;\red171\green100\blue255;\red86\green208\blue179;
+\red255\green231\blue109;\red171\green100\blue255;\red208\green168\blue255;\red102\green218\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c42353\c47451\c52941;\csgenericrgb\c9472\c9472\c11000;\csgenericrgb\c100000\c100000\c100000;
+\csgenericrgb\c94752\c13993\c54713;\csgenericrgb\c20784\c69020\c84706;\csgenericrgb\c98824\c27451\c31765;\csgenericrgb\c67059\c39216\c100000;\csgenericrgb\c33577\c81593\c70189;
+\csgenericrgb\c100000\c90556\c42780;\csgenericrgb\c66997\c39255\c100000;\csgenericrgb\c81466\c65692\c100000;\csgenericrgb\c40000\c85490\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww22760\viewh14900\viewkind0
+\deftab890
+\pard\tx890\pardeftab890\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 //: [Previous](@previous)\cf4 \
+\
+
+\f1\b \cf5 import
+\f0\b0 \cf4  Foundation\
+
+\f1\b \cf5 import
+\f0\b0 \cf4  CoreFoundation\
+\
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 greeting\cf4  = \cf7 "Hello, playground"\cf4 \
+\
+ 
+\f1\b \cf5 let
+\f0\b0 \cf4  \cf6 multiline\cf4  = \cf7 """\cf4 \
+\cf7 hola como es\cf4 \
+\cf7 esto es para poner saltos\cf4 \
+\cf7 multilinea\cf4 \
+\cf7 """\cf4 \
+\
+\cf8 print\cf4 (\cf9 multiline\cf4 )\
+\
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 numero1\cf4  = \cf10 11\cf4 \
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 numero2\cf4  = \cf10 22\cf4 \
+\cf8 print\cf4  (\cf7 " el primer nuero es \cf4 \\(\cf9 numero1\cf4 )\cf7 "\cf4 ) \cf2 // String template\cf4 \
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 cadena\cf4  = \cf7 "hola"\cf4 \
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 cadena1\cf4  = \cf7 "como estas"\cf4 \
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 concatenar\cf4  = \cf9 cadena\cf4  + \cf7 " "\cf4  + \cf9 cadena1\cf4 \
+\cf8 print\cf4 (\cf9 concatenar\cf4 )\
+ \
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 numero11\cf4  = \cf10 12.3\cf4 \
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 numero22\cf4  = \cf10 4.4\cf4 \
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 resultado\cf4  = \cf9 numero11\cf4  + \cf9 numero22\cf4 \
+\
+\cf8 print\cf4  (\cf9 resultado\cf4 )\
+\
+\cf2 //var  nnumerodobles = numero11 + numero1  // esto da un error porque no se puede sumar enteros con dobles\cf4 \
+\
+\cf2 // pero esto si lo permitira porque hara un casting internamente\cf4 \
+\
+\
+\cf2 // todo no se pueden hacer operaciones de sumas o restas con booleanos\cf4 \
+\cf8 print\cf4  (
+\f1\b \cf5 true
+\f0\b0 \cf4  || 
+\f1\b \cf5 false
+\f0\b0 \cf4 )\
+\cf8 print\cf4  (
+\f1\b \cf5 true
+\f0\b0 \cf4  && 
+\f1\b \cf5 false
+\f0\b0 \cf4 )\
+\cf2 // el && obliga a que todas las condiciones se cumplan\cf4 \
+\cf8 print\cf4  ((
+\f1\b \cf5 true
+\f0\b0 \cf4 ) ? \cf10 5\cf4  : \cf10 4\cf4 )\
+\
+\
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 pais\cf4  = \cf7 "Espa\'f1a"\cf4 \
+\
+
+\f1\b \cf5 switch
+\f0\b0 \cf4  \cf9 pais\cf4  \{\
+
+\f1\b \cf5 case
+\f0\b0 \cf4  \cf7 "Espa\'f1a"\cf4 , \cf7 "Argentine"\cf4 :\
+        \cf8 print\cf4 (\cf7 "en \cf4 \\(\cf9 pais\cf4 )\cf7  no se habla ingles"\cf4 )\
+
+\f1\b \cf5 case
+\f0\b0 \cf4   \cf7 "Inglaterra"\cf4 :\
+        \cf8 print\cf4 (\cf7 "en este \cf4 \\(\cf9 pais\cf4 )\cf7  se habla ingles"\cf4 )\
+
+\f1\b \cf5 default
+\f0\b0 \cf4 :\
+        \cf8 print\cf4 (\cf7 "en este \cf4 \\(\cf9 pais\cf4 )\cf7  no se habla ni ingles ni espa\'f1ol"\cf4 )\
+\}\
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 numeros\cf4  = \cf10 0.22\cf4 \
+    
+\f1\b \cf5 switch
+\f0\b0 \cf4  \cf9 numeros\cf4  \{\
+    
+\f1\b \cf5 case
+\f0\b0 \cf4   \cf10 1\cf4 , \cf10 2\cf4 , \cf10 4\cf4 :\
+            \cf8 print\cf4 (\cf7 "son numeros pares"\cf4 )\
+    
+\f1\b \cf5 case
+\f0\b0 \cf4   (\cf10 0.12\cf4 )...(\cf10 0.99\cf4 ):\
+            \cf8 print\cf4 (\cf7 "son decimales"\cf4 )\
+    
+\f1\b \cf5 default
+\f0\b0 \cf4 :\
+            \cf8 print\cf4 (\cf7 "no son numeros naturales"\cf4 )\
+    \
+\}\
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 miArray\cf4  = [\cf7 "mercurio"\cf4 , \cf7 "venus"\cf4 , \cf7 "tierra"\cf4 ]\
+\cf8 print\cf4  (\cf9 miArray\cf4 )\
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 miSegundoArray\cf4  = \cf9 miArray\cf4 \
+\
+\cf8 print\cf4 (\cf9 miSegundoArray\cf4 )\
+\cf9 miArray\cf4 .\cf8 append\cf4 (\cf8 contentsOf\cf4 : [\cf7 "marte"\cf4 , \cf7 "jupiter"\cf4 ])\
+\cf8 print\cf4 (\cf9 miArray\cf4 )\
+\
+\cf9 miArray\cf4 .\cf8 remove\cf4 (\cf8 at\cf4 : \cf10 4\cf4 )\
+\
+\cf8 print\cf4 (\cf9 miArray\cf4 )\
+\cf2 //: [Next](@next)\cf4 \
+\cf9 numero11\cf4  + \cf10 2\cf4 \
+\
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 mapa\cf4  = [\cf7 "jose"\cf4 :\cf10 12\cf4 ,\cf7 "jesus"\cf4 :\cf10 21\cf4 ]\
+\cf9 mapa\cf4 .\cf8 updateValue\cf4 (\cf10 22\cf4 , \cf8 forKey\cf4 : \cf7 "jose"\cf4 )\
+\
+\cf8 print\cf4  (\cf9 mapa\cf4 )\
+\
+
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 indice\cf4  = \cf10 0\cf4 \
+
+\f1\b \cf5 repeat
+\f0\b0 \cf4 \{\
+    \cf8 print\cf4 (\cf9 miArray\cf4 [\cf9 indice\cf4 ])\
+    \cf9 indice\cf4  += \cf10 1\cf4 \
+\}
+\f1\b \cf5 while
+\f0\b0 \cf4  \cf9 indice\cf4  < \cf9 miArray\cf4 .\cf11 count\cf4 \
+\
+\cf2 // FUNCIONES\cf4 \
+\
+
+\f1\b \cf5 func
+\f0\b0 \cf4  \cf6 dimeNombre\cf4 (\cf6 nombre\cf4 :\cf12 String\cf4 , \cf6 edad\cf4  :\cf12 Int\cf4 )\{\
+    \
+    \cf8 print\cf4 (\cf7 "mi nombre es \cf4 \\(nombre)\cf7  y mi edad es \cf4 \\(edad)\cf7 "\cf4 )\
+    \
+\}\
+\
+dimeNombre(nombre: \cf7 "jesus"\cf4 , edad: \cf10 51\cf4 )\
+\
+																				\
+
+\f1\b \cf5 func
+\f0\b0 \cf4  \cf6 holaCadena\cf4 () -> \cf12 String\cf4  \{\
+    
+\f1\b \cf5 return
+\f0\b0 \cf4  \cf7 "hola"\cf4 \
+\}\
+\
+\cf8 print\cf4 (holaCadena())\
+\
+\cf2 //26-3-24\cf4 \
+\
+
+\f1\b \cf5 class
+\f0\b0 \cf4  \cf13 \cb3 Programador\cf4 \cb3 \{\
+    \
+    
+\f1\b \cf5 let
+\f0\b0 \cf4  \cf6 nombre\cf4 :\cf12 String\cf4 \
+    
+\f1\b \cf5 let
+\f0\b0 \cf4  \cf6 edad\cf4  : \cf12 Int\cf4 \
+    
+\f1\b \cf5 let
+\f0\b0 \cf4  \cf6 lenguaje\cf4  : [Lenguaje] \cf2 //array de String\cf4 \
+    
+\f1\b \cf5 var
+\f0\b0 \cf4  \cf6 amigos\cf4  : [Programador]?\
+    \
+    
+\f1\b \cf5 enum
+\f0\b0 \cf4  \cf13 \cb3 Lenguaje\cf4 \cb3 \{\
+        
+\f1\b \cf5 case
+\f0\b0 \cf4  \cf6 swift\cf4 \
+        
+\f1\b \cf5 case
+\f0\b0 \cf4  \cf6 kotlin\cf4 \
+        
+\f1\b \cf5 case
+\f0\b0 \cf4  \cf6 java\cf4 \
+        
+\f1\b \cf5 case
+\f0\b0 \cf4  \cf6 javascript\cf4 \
+    \}\
+    \cf2 // bloque de inicializacion\cf4 \
+    
+\f1\b \cf5 init
+\f0\b0 \cf4 (\cf6 nombre\cf4 :\cf12 String\cf4 , \cf6 edad\cf4 :\cf12 Int\cf4 , \cf6 lenguaje\cf4 :[Lenguaje], \cf6 amigos\cf4 :[Programador]?)\
+    \{\
+        
+\f1\b \cf5 self
+\f0\b0 \cf4 .nombre = nombre\
+        
+\f1\b \cf5 self
+\f0\b0 \cf4 .edad = edad\
+        
+\f1\b \cf5 self
+\f0\b0 \cf4 .lenguaje = lenguaje\
+        
+\f1\b \cf5 self
+\f0\b0 \cf4 .amigos  = amigos\
+    \}\
+    \
+    
+\f1\b \cf5 func
+\f0\b0 \cf4  \cf6 programo\cf4 ()\{\
+        print(\cf7 "programo en estos lenguajes "\cf4 )\
+    \}\
+    \
+    \
+\}\cf2 // fin de la clase\cf4 \
+\
+\cf2 // vamos a instanciar la clase\cf4 \
+
+\f1\b \cf5 let
+\f0\b0 \cf4  \cf6 juan\cf4  = Programador(nombre: \cf7 "Juan"\cf4 , edad: \cf10 23\cf4 , lenguaje: [.java,.javascript], amigos:
+\f1\b \cf5 nil
+\f0\b0 \cf4 ) \cf2 // los enum son para proteger la clase\cf4 \
+
+\f1\b \cf5 let
+\f0\b0 \cf4  \cf6 john\cf4  = Programador(nombre: \cf7 "john"\cf4 , edad: \cf10 21\cf4 , lenguaje: [.java,.javascript], amigos:
+\f1\b \cf5 nil
+\f0\b0 \cf4 )\
+\
+\cf9 juan\cf4 .amigos=[\cf9 john\cf4 ]\
+print(\cf9 juan\cf4 .programo())\
+\
+print(\cf9 juan\cf4 .lenguaje)\
+\
+print(\cf9 juan\cf4 .amigos?.first?.nombre)}
